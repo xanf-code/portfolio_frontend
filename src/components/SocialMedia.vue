@@ -39,7 +39,7 @@
     <!-- Followers tab -->
     <div class="px-4 py-2 border-t border-b border-custom-gray">
         <ul class="flex justify-around">
-            <li class="text-center">
+            <li class="text-center cursor-pointer">
                 <span class="text-center">
                     <svg
                         class="text-black dark:text-white h-6 pl-3"
@@ -66,7 +66,7 @@
                     >
                 </span>
             </li>
-            <li class="text-center">
+            <li class="text-center cursor-pointer">
                 <span class="text-center">
                     <svg
                         class="text-black dark:text-white h-6 pl-3"
@@ -104,7 +104,7 @@
                     >
                 </span>
             </li>
-            <li class="text-center">
+            <li class="text-center cursor-pointer">
                 <span class="text-center">
                     <svg
                         class="text-black dark:text-white h-6 pl-3"

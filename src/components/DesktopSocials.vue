@@ -1,7 +1,7 @@
 <template>
     <div class="pt-4">
         <ul class="flex justify-start">
-            <li class="text-center pr-6">
+            <li class="text-center pr-6 cursor-pointer">
                 <span class="text-center flex">
                     <svg
                         class="text-black dark:text-white h-6 pr-2"
@@ -29,7 +29,7 @@
                     >
                 </span>
             </li>
-            <li class="text-center pr-6">
+            <li class="text-center pr-6 cursor-pointer">
                 <span class="text-center flex">
                     <svg
                         class="text-black dark:text-white h-6 pr-2"
@@ -68,7 +68,7 @@
                     >
                 </span>
             </li>
-            <li class="text-center pr-6">
+            <li class="text-center pr-6 cursor-pointer">
                 <span class="text-center flex">
                     <svg
                         class="text-black dark:text-white h-6 pr-2"

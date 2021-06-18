@@ -15,6 +15,7 @@
                         dark:text-white
                         font-poppins font-semibold
                         text-xl
+                        self-center
                     "
                 >
                     Darshan Aswath

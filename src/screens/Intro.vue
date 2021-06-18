@@ -79,6 +79,8 @@ import DesktopTopHeader from '../components/DesktopTopHeader.vue'
 import { ref } from 'vue'
 import toggleNavBar from '../store/NavStore'
 import { NSwitch, NAvatar } from 'naive-ui'
+import { watch, onBeforeMount } from 'vue'
+
 const active = ref(false)
 const { state } = toggleNavBar()
 
@@ -93,6 +95,17 @@ export default {
         DesktopTopHeader,
     },
     setup() {
+        onBeforeMount(() => {
+            const item = localStorage.getItem('theme')
+            if (item === 'true') {
+                active.value = true
+            } else {
+                active.value = false
+            }
+        })
+        watch(active, (value) => {
+            localStorage.setItem('theme', value)
+        })
         return {
             active: active,
             state,

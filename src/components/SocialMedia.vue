@@ -13,14 +13,7 @@
                 Darshan Aswath
             </span>
             <span
-                class="
-                    text-gray-700
-                    font-poppins
-                    text-md
-                    leading-normal
-                    dark:text-gray-400
-                    pb-1.5
-                "
+                class="text-gray-400 font-poppins text-md leading-normal pb-1.5"
             >
                 Developer
             </span>
@@ -32,7 +25,7 @@
                     dark:text-white
                 "
             >
-                ⚡🎯Creative problem solver with a passion for code and
+                🐱‍💻⚡Creative problem solver with a passion for<br />code and
                 design.<br />📍Bengaluru
             </span>
         </div>

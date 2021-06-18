@@ -4,6 +4,7 @@
 
 <script >
 import toggleNavBar from './store/NavStore'
+
 const { methods } = toggleNavBar()
 
 export default {

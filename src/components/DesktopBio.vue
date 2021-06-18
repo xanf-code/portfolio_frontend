@@ -32,7 +32,8 @@
                     dark:text-white
                 "
             >
-                Creative problem solver with a passion for code and design.<br />📍Bengaluru
+                🐱‍💻⚡Creative problem solver with a passion for code and
+                design.<br />📍Bengaluru
             </span>
         </div>
     </div>

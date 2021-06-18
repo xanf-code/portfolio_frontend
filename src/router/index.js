@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-//Changed View
-import Intro from '../views/Intro.vue'
+import Intro from '@/views/Intro.vue'
 
 const routes = [
     {

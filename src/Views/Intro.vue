@@ -81,7 +81,9 @@ import toggleNavBar from '../store/NavStore'
 import { NSwitch, NAvatar } from 'naive-ui'
 const active = ref(false)
 const { state } = toggleNavBar()
+
 export default {
+    name: 'Intro',
     components: {
         NSwitch,
         NAvatar,

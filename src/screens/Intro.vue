@@ -66,7 +66,49 @@
             <!-- SocialMedia Component -->
             <SocialMedia v-if="state.mobileView" />
             <!-- Section Component -->
-            <SectionComponent />
+            <div
+                class="
+                    flex flex-row
+                    justify-around
+                    border-t border-b border-gray-200
+                    dark:border-gray-700
+                    mt-2
+                "
+            >
+                <div
+                    class="cursor-pointer my-1.5"
+                    v-for="tab in tabs"
+                    :key="tab"
+                    @click="component = tab.name"
+                >
+                    <span>
+                        <img
+                            v-if="active"
+                            class="flex h-6 max-w-screen-lg mx-auto"
+                            :src="tab.darkIcon"
+                            :alt="tab.name"
+                        />
+                        <img
+                            v-else
+                            class="flex h-6 max-w-screen-lg mx-auto"
+                            :src="tab.lightIcon"
+                            :alt="tab.name"
+                        />
+                    </span>
+                    <h1
+                        class="
+                            text-black
+                            dark:text-white
+                            font-poppins font-medium
+                        "
+                    >
+                        {{ tab.name }}
+                    </h1>
+                </div>
+            </div>
+            <keep-alive>
+                <component :is="component" />
+            </keep-alive>
         </main>
     </div>
 </template>
@@ -74,12 +116,22 @@
 <script>
 import TopHeader from '../components/TopHeader.vue'
 import SocialMedia from '../components/SocialMedia.vue'
-import SectionComponent from '../components/SectionComponent.vue'
 import DesktopTopHeader from '../components/DesktopTopHeader.vue'
 import { ref } from 'vue'
 import toggleNavBar from '../store/NavStore'
 import { NSwitch, NAvatar } from 'naive-ui'
 import { watch, onBeforeMount } from 'vue'
+
+// Views
+import Education from '../screens/Education.vue'
+import Projects from './Projects.vue'
+import Skills from '../screens/Skills.vue'
+import projectIcon from '../assets/project_icon.png'
+import educationIcon from '../assets/education_icon.png'
+import skillsIcon from '../assets/skills_icon.png'
+import projectIconLight from '../assets/project_icon_light.png'
+import educationIconLight from '../assets/education_icon_light.png'
+import skillsIconLight from '../assets/skills_icon_light.png'
 
 const active = ref(false)
 const { state } = toggleNavBar()
@@ -91,8 +143,32 @@ export default {
         NAvatar,
         TopHeader,
         SocialMedia,
-        SectionComponent,
         DesktopTopHeader,
+        Education,
+        Projects,
+        Skills,
+    },
+    data() {
+        return {
+            tabs: [
+                {
+                    name: 'Projects',
+                    darkIcon: projectIcon,
+                    lightIcon: projectIconLight,
+                },
+                {
+                    name: 'Education',
+                    darkIcon: educationIcon,
+                    lightIcon: educationIconLight,
+                },
+                {
+                    name: 'Skills',
+                    darkIcon: skillsIcon,
+                    lightIcon: skillsIconLight,
+                },
+            ],
+            component: 'Projects',
+        }
     },
     setup() {
         onBeforeMount(() => {

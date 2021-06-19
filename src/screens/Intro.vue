@@ -4,15 +4,17 @@
         <main class="h-screen dark:bg-black bg-white">
             <!-- Top Main Header -->
             <div class="px-4 py-3 flex justify-between">
-                <n-avatar
-                    circle
-                    :style="{
-                        color: active ? 'black' : 'white',
-                        backgroundColor: active ? 'white' : 'black',
-                    }"
-                >
-                    <h1 class="font-poppins font-semibold">D</h1>
-                </n-avatar>
+                <router-link to="/">
+                    <n-avatar
+                        circle
+                        :style="{
+                            color: active ? 'black' : 'white',
+                            backgroundColor: active ? 'white' : 'black',
+                        }"
+                    >
+                        <h1 class="font-poppins font-semibold">D</h1>
+                    </n-avatar>
+                </router-link>
                 <div class="flex">
                     <svg
                         :class="active ? 'text-white' : 'text-gray-500'"
@@ -76,7 +78,12 @@
                 "
             >
                 <div
-                    class="cursor-pointer my-1.5"
+                    class="
+                        cursor-pointer
+                        mb-1.5
+                        border-t border-transparent
+                        hover:border-blue-600
+                    "
                     v-for="tab in tabs"
                     :key="tab"
                     @click="component = tab.name"
@@ -84,13 +91,13 @@
                     <span>
                         <img
                             v-if="active"
-                            class="flex h-6 max-w-screen-lg mx-auto"
+                            class="flex h-6 max-w-screen-lg mx-auto mt-1.5"
                             :src="tab.darkIcon"
                             :alt="tab.name"
                         />
                         <img
                             v-else
-                            class="flex h-6 max-w-screen-lg mx-auto"
+                            class="flex h-6 max-w-screen-lg mx-auto mt-1.5"
                             :src="tab.lightIcon"
                             :alt="tab.name"
                         />

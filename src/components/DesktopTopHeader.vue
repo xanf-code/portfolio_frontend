@@ -9,7 +9,7 @@
         </div>
         <div class="flex flex-col self-center pl-5">
             <div class="flex">
-                <div>
+                <div class="flex">
                     <h1
                         class="
                             text-black
@@ -21,6 +21,11 @@
                     >
                         Darshan Aswath
                     </h1>
+                    <img
+                        class="ml-2 mr-2"
+                        src="https://emojis.slackmojis.com/emojis/images/1563480763/5999/meow_party.gif?1563480763"
+                        width="30"
+                    />
                 </div>
                 <div class="pl-2">
                     <n-button class="w-full" size="medium" @click="handleClick">

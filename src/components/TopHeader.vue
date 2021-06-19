@@ -8,7 +8,7 @@
             />
         </div>
         <div class="flex flex-col self-center pl-5">
-            <div>
+            <div class="flex">
                 <h1
                     class="
                         text-black
@@ -20,6 +20,11 @@
                 >
                     Darshan Aswath
                 </h1>
+                <img
+                    class="ml-2"
+                    src="https://emojis.slackmojis.com/emojis/images/1547582922/5197/party_blob.gif?1547582922"
+                    width="30"
+                />
             </div>
             <div class="pt-2">
                 <n-button class="w-full" size="medium" @click="handleClick">

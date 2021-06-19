@@ -3,9 +3,19 @@
         <ul class="flex justify-start">
             <a href="https://twitter.com/iamlardBendtner" target="_blank">
                 <li class="text-center pr-6 cursor-pointer">
-                    <span class="text-center flex">
+                    <span class="text-center flex group">
                         <svg
-                            class="text-black dark:text-white h-6 pr-2"
+                            class="
+                                group-hover:animate-pulse
+                                text-black
+                                dark:text-white
+                                h-6
+                                pr-2
+                                dark:hover:text-blue-500
+                                hover:text-blue-500
+                                dark:group-hover:text-blue-500
+                                group-hover:text-blue-500
+                            "
                             xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink"
                             viewBox="0 0 24 24"
@@ -25,6 +35,8 @@
                                 dark:text-white
                                 font-poppins font-normal
                                 self-center
+                                dark:group-hover:text-blue-500
+                                group-hover:text-blue-500
                             "
                             >Twitter</span
                         >
@@ -36,9 +48,19 @@
                 target="_blank"
             >
                 <li class="text-center pr-6 cursor-pointer">
-                    <span class="text-center flex">
+                    <span class="text-center flex group">
                         <svg
-                            class="text-black dark:text-white h-6 pr-2"
+                            class="
+                                group-hover:animate-pulse
+                                text-black
+                                dark:text-white
+                                h-6
+                                pr-2
+                                dark:hover:text-blue-500
+                                hover:text-blue-500
+                                dark:group-hover:text-blue-500
+                                group-hover:text-blue-500
+                            "
                             xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink"
                             viewBox="0 0 24 24"
@@ -69,6 +91,8 @@
                                 dark:text-white
                                 font-poppins font-normal
                                 self-center
+                                dark:group-hover:text-blue-500
+                                group-hover:text-blue-500
                             "
                             >LinkedIn</span
                         >
@@ -77,9 +101,17 @@
             </a>
             <a href="https://github.com/xanf-code" target="_blank">
                 <li class="text-center pr-6 cursor-pointer">
-                    <span class="text-center flex">
+                    <span class="text-center flex group">
                         <svg
-                            class="text-black dark:text-white h-6 pr-2"
+                            class="
+                                group-hover:animate-pulse
+                                text-black
+                                dark:text-white
+                                h-6
+                                pr-2
+                                dark:group-hover:text-blue-500
+                                group-hover:text-blue-500
+                            "
                             xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink"
                             viewBox="0 0 24 24"
@@ -99,6 +131,8 @@
                                 dark:text-white
                                 font-poppins font-normal
                                 self-center
+                                dark:group-hover:text-blue-500
+                                group-hover:text-blue-500
                             "
                             >Github</span
                         >

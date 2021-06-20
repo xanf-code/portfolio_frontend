@@ -1,7 +1,7 @@
 <template>
     <div :class="active ? 'dark' : ''">
         <!-- MAIN BODY -->
-        <main class="h-screen dark:bg-primary-dark bg-white">
+        <main class="h-screen dark:bg-black bg-white">
             <!-- Top Main Header -->
             <div class="px-4 py-3 flex justify-between">
                 <router-link to="/">

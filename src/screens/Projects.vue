@@ -1,7 +1,13 @@
 <template>
-    <div>Projects</div>
+    <ProjectTemplate />
 </template>
 
 <script>
-export default {}
+import ProjectTemplate from '../components/ProjectComponent.vue'
+
+export default {
+    components: {
+        ProjectTemplate,
+    },
+}
 </script>

@@ -60,6 +60,33 @@
                             <path d="M19 11h2m-1-1v2"></path>
                         </g>
                     </svg>
+                    <div class="self-center cursor-pointer">
+                        <a
+                            href="https://github.com/xanf-code/portfolio_frontend"
+                            target="__blank"
+                        >
+                            <svg
+                                class="
+                                    text-main-blue
+                                    dark:text-main-blue
+                                    h-5
+                                    pl-3
+                                "
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2c2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2a4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6c-.6.6-.6 1.2-.5 2V21"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
             <!-- Top Header Component MOBILE/DESKTOP-->

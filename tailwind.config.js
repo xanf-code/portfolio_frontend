@@ -18,7 +18,9 @@ module.exports = {
         'main-dark': '#363636',
         'primary-dark': '#100F10',
         'primary-dark2': '#1B1B1B',
-        'primary-dark3': '#242424'
+        'primary-dark3': '#242424',
+        'tag-light': '#fafafc',
+        'tag-dark': '#18181c'
       },
     },
   },
@@ -26,6 +28,7 @@ module.exports = {
     extend: {
       animation: ['hover', 'focus', 'group-hover'],
       borderWidth: ['hover', 'focus'],
+      margin: ['first', 'last'],
     },
   },
   plugins: [],

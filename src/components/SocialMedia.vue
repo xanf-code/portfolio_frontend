@@ -37,7 +37,7 @@
                 <li class="text-center cursor-pointer">
                     <span class="text-center">
                         <svg
-                            class="text-black dark:text-white h-6 pl-3 pr-3"
+                            class="text-black dark:text-main-blue h-6 pl-3 pr-3"
                             xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink"
                             viewBox="0 0 24 24"
@@ -61,7 +61,7 @@
                 <li class="text-center cursor-pointer">
                     <span class="text-center">
                         <svg
-                            class="text-black dark:text-white h-6 pl-3 pr-3"
+                            class="text-black dark:text-main-blue h-6 pl-3 pr-3"
                             xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink"
                             viewBox="0 0 24 24"
@@ -93,7 +93,7 @@
                 <li class="text-center cursor-pointer">
                     <span class="text-center">
                         <svg
-                            class="text-black dark:text-white h-6 pl-3 pr-3"
+                            class="text-black dark:text-main-blue h-6 pl-3 pr-3"
                             xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink"
                             viewBox="0 0 24 24"

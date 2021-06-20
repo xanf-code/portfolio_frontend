@@ -1,7 +1,7 @@
 <template>
     <div :class="active ? 'dark' : ''">
         <!-- MAIN BODY -->
-        <main class="h-screen dark:bg-black bg-white">
+        <main class="h-screen dark:bg-primary-dark bg-white">
             <!-- Top Main Header -->
             <div class="px-4 py-3 flex justify-between">
                 <router-link to="/">
@@ -73,7 +73,7 @@
                     flex flex-row
                     justify-around
                     border-t border-b border-gray-200
-                    dark:border-gray-700
+                    dark:border-gray-900
                     mt-2
                 "
             >
@@ -82,7 +82,7 @@
                         cursor-pointer
                         mb-1.5
                         border-t border-transparent
-                        hover:border-blue-600
+                        hover:border-main-blue
                     "
                     v-for="tab in tabs"
                     :key="tab"

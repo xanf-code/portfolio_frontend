@@ -10,7 +10,15 @@ module.exports = {
         poppins: ["Poppins"]
       },
       colors: {
-        'custom-gray': '#dbdbdb'
+        'custom-gray': '#dbdbdb',
+        'custom-black': '#0b0e11',
+        'inu-gray': '#151a21',
+        'main-blue': '#8739F9',
+        'main-light': '#C651CD',
+        'main-dark': '#363636',
+        'primary-dark': '#100F10',
+        'primary-dark2': '#1B1B1B',
+        'primary-dark3': '#242424'
       },
     },
   },

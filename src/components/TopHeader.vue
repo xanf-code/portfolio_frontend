@@ -27,7 +27,7 @@
                 />
             </div>
             <div class="pt-2">
-                <n-button class="w-full" size="medium" @click="handleClick">
+                <n-button class="w-full" size="medium" @click="onClick">
                     <h1 class="text-black dark:text-white font-poppins">
                         Message
                     </h1>
@@ -45,11 +45,12 @@ export default {
         NButton,
     },
     setup() {
-        function handleClick() {
-            console.log('TAPPED MESSAGE')
+        const onClick = function handleClick() {
+            var email = 'darshanaswath@gmail.com'
+            document.location = 'mailto:' + email
         }
 
-        return { handleClick }
+        return { onClick }
     },
 }
 </script>

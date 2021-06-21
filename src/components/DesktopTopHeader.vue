@@ -61,7 +61,8 @@ export default {
     },
     setup() {
         const onClick = function handleClick() {
-            console.log('TAPPED MESSAGE')
+            var email = 'darshanaswath@gmail.com'
+            document.location = 'mailto:' + email
         }
 
         return { onClick }

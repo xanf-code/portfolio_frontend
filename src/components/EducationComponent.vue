@@ -12,7 +12,7 @@
         <div class="flex">
             <img
                 width="44"
-                class="my-4 ml-1.5 mr-2"
+                class="my-4 ml-4 mr-2"
                 :src="edu.logo"
                 :alt="edu.name"
             />
@@ -20,7 +20,7 @@
                 <span
                     class="
                         mt-1
-                        ml-1.5
+                        ml-2
                         text-black
                         font-poppins font-medium
                         dark:text-white
@@ -30,7 +30,7 @@
                 </span>
                 <span
                     class="
-                        ml-1.5
+                        ml-2
                         text-gray-700
                         font-poppins font-sm
                         dark:text-gray-300
@@ -41,7 +41,7 @@
                 <span
                     class="
                         mb-1
-                        ml-1.5
+                        ml-2
                         text-gray-500
                         font-poppins font-xs
                         dark:text-gray-500

@@ -49,6 +49,7 @@
                                 dark:bg-tag-dark
                                 first:ml-0
                                 mx-2
+                                mt-2
                                 rounded-md
                             "
                         >
@@ -61,6 +62,7 @@
                 <a :href="project.projectLink" target="__blank">
                     <svg
                         class="
+                            mt-2
                             h-6
                             self-center
                             text-black

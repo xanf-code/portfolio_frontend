@@ -1,19 +1,9 @@
 <template>
-    <div
-        class="
-            grid grid-cols-2
-            md:grid-cols-3
-            xl:grid-cols-4
-            gap-2
-            md:gap-4
-            mx-2
-            my-2
-            md:mx-4
-            md:my-4
-        "
-    >
-        <div v-for="skill in state.results" :key="skill._id">
-            <SkillComponent :name="skill.name" :logo="skill.logo" />
+    <div class="bg-white dark:bg-black">
+        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 mx-2 my-2">
+            <div v-for="skill in state.results" :key="skill._id">
+                <SkillComponent :name="skill.name" :logo="skill.logo" />
+            </div>
         </div>
     </div>
 </template>

@@ -30,7 +30,10 @@
                     </div>
                 </div>
                 <div class="pl-2">
-                    <button class="btn btn-outline btn-primary">
+                    <button
+                        class="btn btn-outline btn-primary"
+                        @click="onClick"
+                    >
                         <h1 class="text-black dark:text-white font-poppins">
                             Message
                         </h1>

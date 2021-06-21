@@ -27,13 +27,11 @@
                 />
             </div>
             <div class="pt-2">
-                <a href="mailto:darshanaswth@gmail.com">
-                    <n-button class="w-full" size="medium">
-                        <h1 class="text-black dark:text-white font-poppins">
-                            Message
-                        </h1>
-                    </n-button>
-                </a>
+                <n-button class="w-full" size="medium" @click="onClick">
+                    <h1 class="text-black dark:text-white font-poppins">
+                        Message
+                    </h1>
+                </n-button>
             </div>
         </div>
     </div>

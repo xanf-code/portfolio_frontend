@@ -12,7 +12,7 @@
             md:my-4
         "
     >
-        <div v-for="edu in education" :key="edu.name">
+        <div v-for="edu in state.results" :key="edu._id">
             <EducationComponents :edu="edu" />
         </div>
     </div>
@@ -20,40 +20,18 @@
 
 <script>
 import EducationComponents from '../components/EducationComponent.vue'
-
-const education = [
-    {
-        name: 'Bangalore Institute of Technology',
-        type: 'College',
-        field: 'Computer Science',
-        logo: 'https://img.icons8.com/dusk/64/ffffff/university.png',
-        startDate: '2020',
-        endDate: '2024',
-    },
-    {
-        name: '',
-        type: 'College',
-        field: 'PCMB',
-        logo: 'https://img.icons8.com/dusk/64/ffffff/university.png',
-        startDate: '2020',
-        endDate: '2024',
-    },
-    {
-        name: 'Carmel High School',
-        type: 'School',
-        field: 'Primary Education',
-        logo: 'https://img.icons8.com/dusk/64/ffffff/school.png',
-        startDate: '2020',
-        endDate: '2024',
-    },
-]
+import getData from '../service/educationAPI'
 
 export default {
     components: {
         EducationComponents,
     },
     setup() {
-        return { education }
+        const { state, getEducationData } = getData()
+
+        getEducationData()
+
+        return { state }
     },
 }
 </script>

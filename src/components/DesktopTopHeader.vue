@@ -30,13 +30,11 @@
                     </div>
                 </div>
                 <div class="pl-2">
-                    <a href="mailto:demo@demo.com">
-                        <button class="btn btn-outline btn-primary">
-                            <h1 class="text-black dark:text-white font-poppins">
-                                Message
-                            </h1>
-                        </button>
-                    </a>
+                    <button class="btn btn-outline btn-primary">
+                        <h1 class="text-black dark:text-white font-poppins">
+                            Message
+                        </h1>
+                    </button>
                 </div>
             </div>
             <!-- SOCIALS DESKTOP -->

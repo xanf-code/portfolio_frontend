@@ -60,7 +60,86 @@
                             <path d="M19 11h2m-1-1v2"></path>
                         </g>
                     </svg>
-                    <div class="self-center cursor-pointer">
+                    <div
+                        v-if="!state.mobileView"
+                        class="dropdown dropdown-end ml-3 self-center"
+                    >
+                        <svg
+                            tabindex="0"
+                            class="
+                                h-6
+                                text-black
+                                dark:text-white
+                                cursor-pointer
+                            "
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M7 10l5 5l5-5H7z"
+                                fill="currentColor"
+                            ></path>
+                        </svg>
+                        <ul
+                            class="
+                                mt-2
+                                shadow
+                                menu
+                                dropdown-content
+                                text-black
+                                dark:text-white
+                                dark:bg-tag-dark
+                                bg-white
+                                rounded-box
+                                w-52
+                            "
+                        >
+                            <li>
+                                <a
+                                    href="https://github.com/xanf-code/portfolio_frontend"
+                                    target="__blank"
+                                >
+                                    <div
+                                        class="flex self-center cursor-pointer"
+                                    >
+                                        <svg
+                                            class="
+                                                self-center
+                                                text-main-blue
+                                                dark:text-main-blue
+                                                h-5
+                                            "
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2c2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2a4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6c-.6.6-.6 1.2-.5 2V21"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></path>
+                                        </svg>
+                                        <span
+                                            class="
+                                                ml-3
+                                                self-center
+                                                dark:text-white
+                                                text-black
+                                                font-poppins
+                                            "
+                                            >Source Code</span
+                                        >
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div v-else class="self-center cursor-pointer">
                         <a
                             href="https://github.com/xanf-code/portfolio_frontend"
                             target="__blank"
@@ -111,8 +190,8 @@
                         border-t border-transparent
                         hover:border-main-blue
                     "
-                    v-for="tab in tabs"
-                    :key="tab"
+                    v-for="(tab, index) in tabs"
+                    :key="index"
                     @click="component = tab.name"
                 >
                     <span>
@@ -216,6 +295,7 @@ export default {
         watch(active, (value) => {
             localStorage.setItem('theme', value)
         })
+
         return {
             active: active,
             state,
@@ -223,4 +303,3 @@ export default {
     },
 }
 </script>
-

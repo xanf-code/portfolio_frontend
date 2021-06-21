@@ -6,6 +6,7 @@
             bg-gray-100
             dark:bg-custom-black
             rounded-md
+            py-2
         "
     >
         <div class="flex">

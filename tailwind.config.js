@@ -31,5 +31,7 @@ module.exports = {
       margin: ['first', 'last'],
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 }

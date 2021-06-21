@@ -26,15 +26,15 @@
                     width="30"
                 />
             </div>
-            <a href="mailto:darshanaswth@gmail.com">
-                <div class="pt-2">
+            <div class="pt-2">
+                <a href="mailto:darshanaswth@gmail.com">
                     <n-button class="w-full" size="medium">
                         <h1 class="text-black dark:text-white font-poppins">
                             Message
                         </h1>
                     </n-button>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
     </div>
 </template>

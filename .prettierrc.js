@@ -1,11 +1,13 @@
 module.exports = {
-    semi: false,
-    tabWidth: 4,
-    useTabs: false,
-    printWidth: 80,
-    endOfLine: 'auto',
-    singleQuote: true,
-    trailingComma: 'es5',
-    bracketSpacing: true,
-    arrowParens: 'always',
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": false,
+    "quoteProps": "as-needed",
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "arrowParens": "always",
+    "printWidth": 80,
+    "endOfLine": "auto",
+    "vueIndentScriptAndStyle": true
 }

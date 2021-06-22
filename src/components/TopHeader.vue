@@ -46,13 +46,5 @@ export default {
         NAvatar,
         NButton,
     },
-    setup() {
-        const onClick = function handleClick() {
-            var email = 'darshanaswath@gmail.com'
-            document.location = 'mailto:' + email
-        }
-
-        return { onClick }
-    },
 }
 </script>

@@ -52,10 +52,10 @@
 import DesktopBio from '../components/DesktopBio.vue'
 import DesktopSocials from '../components/DesktopSocials.vue'
 import { NAvatar } from 'naive-ui'
+
 export default {
     components: {
         NAvatar,
-
         DesktopBio,
         DesktopSocials,
     },

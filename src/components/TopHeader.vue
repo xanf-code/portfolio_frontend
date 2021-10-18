@@ -4,7 +4,7 @@
       <n-avatar
         circle
         :size="95"
-        src="https://media-exp1.licdn.com/dms/image/C5103AQGvozR-E6gU0g/profile-displayphoto-shrink_800_800/0/1585673202903?e=1629331200&v=beta&t=OtCI08Hnu-mJXqU8KdVnDezzSRrQhqN7Hss9ftC7fJY"
+        src="https://media-exp1.licdn.com/dms/image/C5103AQGvozR-E6gU0g/profile-displayphoto-shrink_200_200/0/1585673202903?e=1640217600&v=beta&t=aYP4gI3Y9Vena5MbVd7DNUXNxbXq_o5VRb3S4KBt-EA"
       />
     </div>
     <div class="flex flex-col self-center pl-5">
